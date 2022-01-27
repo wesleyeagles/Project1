@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+@font-face {
+    font-family: SocialCircles;
+    src: url("https://static.wixstatic.com/ufonts/1ad91e_7c41ec2cca844de6a6916c31d2e9d677/woff2/file.woff2") format("woff2"),
+    url("https://static.wixstatic.com/ufonts/1ad91e_7c41ec2cca844de6a6916c31d2e9d677/woff/file.woff") format("woff"),
+    url("https://static.wixstatic.com/ufonts/1ad91e_7c41ec2cca844de6a6916c31d2e9d677/ttf/file.ttf") format("ttf");
+    
+    
+    }
 
 body {
 
@@ -220,6 +228,66 @@ a i {
 .warningClass {
 
     border-bottom: crimson solid 2px!important;
+}
+
+.box-all-white {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    font-weight: 500;
+    font-size: 23px;
+    color: #A9CF46;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.email-box a, .contato a, .adress-box a {
+    text-decoration: none;
+    color: #A9CF46;
+}
+
+.email-box, .contato {
+
+    height: 40px;
+}
+
+.social-box span, .social-box a{
+
+    font-family: SocialCircles;
+    font-size: 60px;
+    color: #A9CF46;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer {
+
+    height: 120px;
+    background: #8F3131;
+
+}
+
+.box-rodape {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.box-rodape p {
+
+    height: 10px;
+    font-size: 20px;
+}
+
+.box-rodape a {
+
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
 }
 
 @media screen and (max-width:1440px) {
