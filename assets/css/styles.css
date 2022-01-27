@@ -35,7 +35,7 @@ body {
     height: 70px;
 }
 
-.input-box input[type=text], .input-box input[type=date] {
+.input-box input[type=text], .input-box input[type=date], .input-box input[type=file] {
 
     width: 800px;
   padding: 12px 10px;
@@ -178,7 +178,7 @@ a i {
 
 
 
-.quest-2, .quest-3, .quest-4, .quest-5, .quest-6, .quest-7, .quest-8, .quest-9, .quest-10 {
+.final, .quest-2, .quest-3, .quest-4, .quest-5, .quest-6, .quest-7, .quest-8, .quest-9, .quest-10 {
 
     position: absolute;
     right: 1000px;
@@ -197,4 +197,25 @@ a i {
     display: flex;
     flex-direction: column;
 }
+
+.final-box {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 800px;
+    text-align: center;
+    color: white;
+}
+
+.m-5 {
+
+    flex-direction: row;
+    padding-top: 130px;
+    gap: 10px;
+}
+
+
 

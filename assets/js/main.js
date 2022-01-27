@@ -8,6 +8,7 @@ var question7 = document.getElementById("question7")
 var question8 = document.getElementById("question8")
 var question9 = document.getElementById("question9")
 var question10 = document.getElementById("question10")
+var finalA = document.getElementById("final")
 
 
 function changeOption() {
@@ -162,5 +163,41 @@ function optionProjeto3d() {
 
     question10.classList.remove("hidden")
     question10.classList.add("none-class")
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function enviar() {
+
+    question1.classList.add("hidden")
+    question2.classList.add("hidden")
+    question3.classList.add("hidden")
+    question4.classList.add("hidden")
+    question5.classList.add("hidden")
+    question6.classList.add("hidden")
+    question7.classList.add("hidden")
+    question8.classList.add("hidden")
+    question9.classList.add("hidden")
+    question10.classList.add("hidden")
+
+    finalA.classList.remove("hidden")
+    finalA.classList.add("none-class")
 
 }
