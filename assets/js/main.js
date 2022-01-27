@@ -15,6 +15,10 @@ var question14 = document.getElementById("question14")
 var question15 = document.getElementById("question15")
 var finalA = document.getElementById("final")
 
+var checkbox = document.getElementById("sim");
+
+
+
 
 function changeOption() {
 
@@ -86,6 +90,14 @@ function changeOption6() {
 
     question7.classList.remove("hidden")
     question7.classList.add("none-class")
+
+    if (checkbox.checked == true) {
+        console.log ("Foi Escolhido o Sim")
+    } else {
+        console.log ("Foi Escolhido o Não")
+    }
+
+    
     
 
 
