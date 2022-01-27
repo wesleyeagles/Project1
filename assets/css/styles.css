@@ -409,7 +409,37 @@ footer {
         font-size: 16px;
     }
 
+    .box-all-white {
+
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #A9CF46;
+        align-items: center;
+        text-decoration: none;
     
+    }
+
+    
+}
+
+@media screen and (max-width:375px) {
+
+    .box-all-white {
+
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        font-weight: 500;
+        font-size: 13px;
+        color: #A9CF46;
+        align-items: center;
+        text-decoration: none;
+    
+    }
+
 }
 
 
