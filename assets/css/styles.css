@@ -412,7 +412,8 @@ footer {
 
     .question-box h1 {
 
-        font-size: 16px;
+        font-size: 20px;
+        width: 300px;
     }
 
     .box-all-white {
