@@ -65,9 +65,10 @@ body {
 
 .input-box label {
 
-    color: white!important;
+    color: rgba(21, 255, 0, 0.747)!important;
     width: 800px;
     height: 40px;
+    font-weight: bold;
     background: transparent;
     border: white 1px solid;
     display: flex;
@@ -75,13 +76,17 @@ body {
     margin: 3px;
     font-size: 22px;
     cursor: pointer;
+    background-color: rgba(192, 255, 173, 0.267);
+        box-shadow: rgba(1, 255, 1, 0.6) 0px 0px 0px 1px inset;
+        color: rgb(180, 255, 173);
 
 }
 
 .input-box label:hover {
 
-    background: white;
-    color: black!important;
+    background-color: rgba(192, 255, 173, 0.719);
+        box-shadow: rgba(1, 255, 1, 0.6) 0px 0px 0px 1px inset;
+        color: rgb(180, 255, 173);
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -393,6 +398,7 @@ footer {
         margin: 3px;
         font-size: 22px;
         cursor: pointer;
+        
     
     }
 
