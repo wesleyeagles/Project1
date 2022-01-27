@@ -283,6 +283,11 @@ a i {
       
     }
 
+    .input-box input[type=text]::placeholder {
+
+        font-size: 12px;
+    }
+
     .input-box select {
 
         width: 300px;
