@@ -1,3 +1,27 @@
+function mascara(o,f){
+    v_obj=o
+    v_fun=f
+    setTimeout("execmascara()",1)
+}
+function execmascara(){
+    v_obj.value=v_fun(v_obj.value)
+}
+function mtel(v){
+    v=v.replace(/\D/g,""); //Remove tudo o que não é dígito
+    v=v.replace(/^(\d{2})(\d)/g,"($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
+    v=v.replace(/(\d)(\d{4})$/,"$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
+    return v;
+}
+function id( el ){
+	return document.getElementById( el );
+}
+window.onload = function(){
+	id('questionNum3').onkeyup = function(){
+		mascara( this, mtel );
+	}
+}
+
+
 var question1 = document.getElementById("question1")
 var question2 = document.getElementById("question2")
 var question3 = document.getElementById("question3")
@@ -22,20 +46,51 @@ var checkbox = document.getElementById("sim");
 
 function changeOption() {
 
+    var inputName = document.getElementById("questionNum1").value
+    var inputClass = document.getElementById("questionNum1")
+    var warningName = document.getElementById("warningName")
+    warningName.style.padding = "10px"
+    warningName.style.borderRadius = "5px"
+    warningName.style.background = "crimson"
+    warningName.style.color = "white"
+
+    if (inputName == "") {
+     inputClass.classList.add("warningClass")
+     warningName.innerHTML = "Digite um nome valido"
+    } else {
+
     question1.classList.add("hidden")
     question2.classList.remove("hidden")
     question2.classList.add("none-class")
+
+    }
 
 
 }
 
 function changeOption2() {
 
+    var inputEmail = document.getElementById("questionNum2").value
+    var inputClass = document.getElementById("questionNum2")
+    var warningEmail = document.getElementById("warningEmail")
+    warningEmail.style.padding = "10px"
+    warningEmail.style.borderRadius = "5px"
+    warningEmail.style.background = "crimson"
+    warningEmail.style.color = "white"
+
+    if (inputEmail == "") {
+
+     inputClass.classList.add("warningClass")
+     warningEmail.innerHTML = "Digite um email valido"
+
+    } else {
+
     question1.classList.add("hidden")
     question2.classList.add("hidden")
     question3.classList.remove("hidden")
     question3.classList.add("none-class")
 
+}
 
 }
 

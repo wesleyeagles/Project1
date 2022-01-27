@@ -35,7 +35,7 @@ body {
     height: 70px;
 }
 
-.input-box input[type=text], .input-box input[type=date], .input-box input[type=file] {
+.input-box input[type=text], .input-box input[type=email], .input-box input[type=tel], .input-box input[type=date], .input-box input[type=file] {
 
     width: 800px;
   padding: 12px 10px;
@@ -215,6 +215,11 @@ a i {
     flex-direction: row;
     padding-top: 130px;
     gap: 10px;
+}
+
+.warningClass {
+
+    border-bottom: crimson solid 2px!important;
 }
 
 @media screen and (max-width:1440px) {
