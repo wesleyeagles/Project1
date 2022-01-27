@@ -68,7 +68,7 @@ body {
     color: rgba(21, 255, 0, 0.747)!important;
     width: 800px;
     height: 40px;
-    font-weight: bold;
+    font-weight: 800;
     background: transparent;
     border: white 1px solid;
     display: flex;
@@ -346,9 +346,9 @@ footer {
         align-items: center;
     }
 
-    .input-box input[type=text], .input-box input[type=date], .input-box input[type=file] {
+    .input-box input[type=text], .input-box input[type=email], .input-box input[type=tel], .input-box input[type=date], .input-box input[type=file] {
 
-        width: 300px;
+        width: 300px!important;
       padding: 12px 10px;
       margin: 0px 0;
       font-size: 22px;
@@ -407,7 +407,7 @@ footer {
         background: rgba(0, 0, 0, 0.473);
         width: 350px;
         display: flex;
-        height: 800px;
+        height: 500px;
     }
 
     .question-box h1 {
@@ -436,11 +436,7 @@ footer {
         
     }
     
-    .box-form {
     
-     
-        height: 500px;
-    }
 
     
 }
