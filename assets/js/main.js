@@ -8,6 +8,11 @@ var question7 = document.getElementById("question7")
 var question8 = document.getElementById("question8")
 var question9 = document.getElementById("question9")
 var question10 = document.getElementById("question10")
+var question11 = document.getElementById("question11")
+var question12 = document.getElementById("question12")
+var question13 = document.getElementById("question13")
+var question14 = document.getElementById("question14")
+var question15 = document.getElementById("question15")
 var finalA = document.getElementById("final")
 
 
@@ -166,6 +171,93 @@ function optionProjeto3d() {
 
 }
 
+function optionPaisagismo() {
+
+    question1.classList.add("hidden")
+    question2.classList.add("hidden")
+    question3.classList.add("hidden")
+    question4.classList.add("hidden")
+    question5.classList.add("hidden")
+    question6.classList.add("hidden")
+    question7.classList.add("hidden")
+    question8.classList.add("hidden")
+    question9.classList.add("hidden")
+
+    question11.classList.remove("hidden")
+    question11.classList.add("none-class")
+
+}
+
+function optionLago() {
+
+    question1.classList.add("hidden")
+    question2.classList.add("hidden")
+    question3.classList.add("hidden")
+    question4.classList.add("hidden")
+    question5.classList.add("hidden")
+    question6.classList.add("hidden")
+    question7.classList.add("hidden")
+    question8.classList.add("hidden")
+    question9.classList.add("hidden")
+
+    question12.classList.remove("hidden")
+    question12.classList.add("none-class")
+
+}
+
+function optionParede() {
+
+    question1.classList.add("hidden")
+    question2.classList.add("hidden")
+    question3.classList.add("hidden")
+    question4.classList.add("hidden")
+    question5.classList.add("hidden")
+    question6.classList.add("hidden")
+    question7.classList.add("hidden")
+    question8.classList.add("hidden")
+    question9.classList.add("hidden")
+
+    question13.classList.remove("hidden")
+    question13.classList.add("none-class")
+
+}
+
+function optionInterna() {
+
+    question1.classList.add("hidden")
+    question2.classList.add("hidden")
+    question3.classList.add("hidden")
+    question4.classList.add("hidden")
+    question5.classList.add("hidden")
+    question6.classList.add("hidden")
+    question7.classList.add("hidden")
+    question8.classList.add("hidden")
+    question9.classList.add("hidden")
+    question13.classList.add("hidden")
+
+    question14.classList.remove("hidden")
+    question14.classList.add("none-class")
+
+}
+
+function optionExterna() {
+
+    question1.classList.add("hidden")
+    question2.classList.add("hidden")
+    question3.classList.add("hidden")
+    question4.classList.add("hidden")
+    question5.classList.add("hidden")
+    question6.classList.add("hidden")
+    question7.classList.add("hidden")
+    question8.classList.add("hidden")
+    question9.classList.add("hidden")
+    question13.classList.add("hidden")
+
+    question15.classList.remove("hidden")
+    question15.classList.add("none-class")
+
+}
+
 
 
 
@@ -196,6 +288,11 @@ function enviar() {
     question8.classList.add("hidden")
     question9.classList.add("hidden")
     question10.classList.add("hidden")
+    question11.classList.add("hidden")
+    question12.classList.add("hidden")
+    question13.classList.add("hidden")
+    question14.classList.add("hidden")
+    question15.classList.add("hidden")
 
     finalA.classList.remove("hidden")
     finalA.classList.add("none-class")

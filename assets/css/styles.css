@@ -178,17 +178,17 @@ a i {
 
 
 
-.final, .quest-2, .quest-3, .quest-4, .quest-5, .quest-6, .quest-7, .quest-8, .quest-9, .quest-10 {
+.final, .quest-2, .quest-3, .quest-4, .quest-5, .quest-6, .quest-7, .quest-8, .quest-9, .quest-10, .quest-11, .quest-12, .quest-13, .quest-14, .quest-15 {
 
     position: absolute;
-    right: 1000px;
+    right: 50%;
 }
 
 .none-class {
 
     position: absolute;
     z-index: 999;
-    right: 560px;
+    right: 28%;
     transition: 1s;
 }
 
@@ -215,6 +215,103 @@ a i {
     flex-direction: row;
     padding-top: 130px;
     gap: 10px;
+}
+
+@media screen and (max-width:1440px) {
+
+    .none-class {
+
+        position: absolute;
+        z-index: 999;
+        right: 23%;
+        transition: 1s;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    .none-class {
+
+        position: absolute;
+        z-index: 999;
+        right: 10%;
+        transition: 1s;
+    }
+}
+
+@media screen and (max-width:425px) {
+
+    body {
+
+        width: 100%!important;
+    }
+
+    .none-class {
+
+        position: absolute;
+        z-index: 999;
+        right: 10%;
+        transition: 1s;
+    }
+
+    .final-box {
+
+        width: 300px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .all-Content {
+
+        margin-left: 0px;
+        padding-top: 0px;
+    }
+
+    .input-box input[type=text], .input-box input[type=date], .input-box input[type=file] {
+
+        width: 300px;
+      padding: 12px 10px;
+      margin: 0px 0;
+      font-size: 22px;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 2px solid white;
+      background: transparent;
+      color: white;
+      transition: 1.6s;
+      
+    }
+    
+    .input-box input[type=checkbox] {
+    
+        width: 1px;
+    }
+    
+    .input-box label {
+    
+        color: white!important;
+        width: 300px;
+        height: 40px;
+        background: transparent;
+        border: white 1px solid;
+        display: flex;
+        align-items: center;
+        margin: 3px;
+        font-size: 22px;
+        cursor: pointer;
+    
+    }
+
+    .box-form {
+
+        background: rgba(0, 0, 0, 0.473);
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+    }
+
+    
 }
 
 
