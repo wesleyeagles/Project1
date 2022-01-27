@@ -5,19 +5,206 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
     <title>Projeto 1</title>
 </head>
 <body>
 
-    <h1>Testando integração GitHub</h1>
+    <form action="">
 
-    <input id="salario" type="text">
-    <input onclick="aumentoSalarial()" id="enviar" type="button" value="submit">
+<div class="heading">
+        <div class="box-form">
 
-    <div>
-        <h1 id="novoSalario"></h1>
-    </div>
-    
+            
+
+            <div id="question1" class="all-Content quest-1">
+            <div class="question-box">
+                <h1>1. Qual seu nome completo ?</h1>
+            </div>
+
+            <div class="input-box">
+                <input placeholder="exemplo:Celso Ursomanco" id="question" type="text">
+            </div>
+
+            <div class="button-box">
+                <a id="btn-question1" onclick="changeOption(1000)">OK <i class="large material-icons">check</i></a>
+            </div>
+
+
+        </div>
+
+        <div id="question2" class="all-Content hidden quest-2">
+            <div class="question-box">
+                <h1>2. Qual seu email ?</h1>
+            </div>
+
+            <div class="input-box">
+                <input placeholder="exemplo:celso@jde.com.br" id="question" type="text">
+            </div>
+
+            <div class="button-box">
+                <a id="btn-question2" onclick="changeOption2(1000)">OK <i class="large material-icons">check</i></a>
+            </div>
+
+
+        </div>
+
+        <div id="question3" class="all-Content hidden quest-3">
+            <div class="question-box">
+                <h1>3. Qual seu telefone ?</h1>
+            </div>
+
+            <div class="input-box">
+                <input placeholder="exemplo:+5551999999999" id="question" type="text">
+            </div>
+
+            <div class="button-box">
+                <a id="btn-question3" onclick="changeOption3(1000)">OK <i class="large material-icons">check</i></a>
+            </div>
+
+
+        </div>
+
+        <div id="question4" class="all-Content hidden quest-4">
+            <div class="question-box">
+                <h1>4. Qual seu endereço ?</h1>
+            </div>
+
+            <div class="input-box">
+                <input placeholder="exemplo:Rua Alameda da Inovação 273" id="question" type="text">
+            </div>
+
+            <div class="button-box">
+                <a id="btn-question4" onclick="changeOption4(1000)">OK <i class="large material-icons">check</i></a>
+            </div>
+
+
+        </div>
+
+        <div id="question5" class="all-Content hidden quest-5">
+            <div class="question-box">
+                <h1>5. Tem filhos ? quantos ?</h1>
+            </div>
+
+            <div class="input-box">
+                <select name="filhos" id="question">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+
+            <div class="button-box">
+                <a id="btn-question5" onclick="changeOption5(1000)">OK <i class="large material-icons">check</i></a>
+            </div>
+
+
+        </div>
+
+        <div id="question6" class="all-Content hidden quest-6">
+            <div class="question-box">
+                <h1>6. Possui sistema de irrigação ?</h1>
+            </div>
+
+            <div class="input-box">
+                <select name="irrigacao" id="question">
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                   
+                </select>
+            </div>
+
+            <div class="button-box">
+                <a id="btn-question6" onclick="changeOption6(1000)">OK <i class="large material-icons">check</i></a>
+            </div>
+
+
+        </div>
+
+        <div id="question7" class="all-Content hidden quest-7">
+            <div class="question-box">
+                <h1>7. Previsão de execução</h1>
+            </div>
+
+            <div class="input-box">
+                <input type="date" name="date" id="data">
+            </div>
+
+            <div class="button-box">
+                <a id="btn-question7" onclick="changeOption7(1000)">OK <i class="large material-icons">check</i></a>
+            </div>
+
+
+        </div>
+
+        <div id="question8" class="all-Content hidden quest-8">
+            <div class="question-box">
+                <h1>8. Tu é um profissional ou cliente final ?</h1>
+            </div>
+
+            <div class="input-box d-grid">
+                <label onclick="optionArquiteto()" for="arquiteto"><input type="checkbox" name="arquiteto" id="arquiteto">Arquiteto</label>
+                <label onclick="optionPaisagista()" for="paisagista"><input type="checkbox" name="paisagista" id="paisagista">Paisagista</label>
+                <label onclick="optionClienteFinal()" for="clienteFinal"><input type="checkbox" name="clienteFinal" id="clienteFinal">Cliente Final</label>
+            </div>
+
+            
+
+
+        </div>
+
+        <div id="question9" class="all-Content hidden quest-9">
+            <div class="question-box">
+                <h1>9. O que procura ?</h1>
+            </div>
+
+            <div class="input-box">
+                <label onclick="optionProjeto3d()" for="arquiteto"><input type="checkbox" name="arquiteto" id="arquiteto">Projeto 3D</label>
+                <label onclick="optionPaisagismo()" for="paisagista"><input type="checkbox" name="paisagista" id="paisagista">Paisagismo</label>
+                <label onclick="optionLago()" for="clienteFinal"><input type="checkbox" name="clienteFinal" id="clienteFinal">Lago</label>
+                <label onclick="optionParede()" for="clienteFinal"><input type="checkbox" name="clienteFinal" id="clienteFinal">Parede Verde</label>
+            </div>
+
+            
+
+
+        </div>
+
+        <div id="question10" class="all-Content hidden quest-10">
+            <div class="question-box">
+                <h1>10. Possui arquivo do projeto ?</h1>
+            </div>
+
+            <div class="input-box">
+                <input type="file" name="upload" id="archive">
+            </div>
+
+            
+
+
+        </div>
+
+        </div>
+
+
+
+</div>
+
+</form>
 
 
 

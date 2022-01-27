@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+body {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+.heading {
+
+    background-image: url(https://imagizer.imageshack.com/img922/9176/uNkmt3.png);
+    height: 800px;
+    display: grid;
+    justify-content: center;
+    
+}
+
+.box-form {
+
+    background: rgba(0, 0, 0, 0.473);
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+}
+
+.question-box {
+
+    height: 70px;
+}
+
+.input-box input[type=text], .input-box input[type=date] {
+
+    width: 800px;
+  padding: 12px 10px;
+  margin: 0px 0;
+  font-size: 22px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid white;
+  background: transparent;
+  color: white;
+  transition: 1.6s;
+  
+}
+
+.input-box input[type=checkbox] {
+
+    width: 1px;
+}
+
+.input-box label {
+
+    color: white!important;
+    width: 800px;
+    height: 40px;
+    background: transparent;
+    border: white 1px solid;
+    display: flex;
+    align-items: center;
+    margin: 3px;
+    font-size: 22px;
+    cursor: pointer;
+
+}
+
+.input-box label:hover {
+
+    background: white;
+    color: black!important;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(100%);
+    
+  }
+
+.input-box select {
+
+    width: 800px;
+    padding: 12px 10px;
+    margin: 0px 0;
+    font-size: 22px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    color: white;
+    transition: 1.6s; 
+    
+}
+
+
+select:focus {
+
+    
+    color: white;
+    background: rgb(3, 94, 82);
+    border: none;
+    outline: none;
+}
+
+
+.all-Content {
+
+    margin-left: 100px;
+    padding-top: 200px;
+}
+
+
+
+.question-box h1 {
+
+    color: white;
+    opacity: 1!important;
+    
+}
+
+.button-box {
+
+    margin-top: 35px;
+}
+
+.button-box a {
+
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    justify-content: space-evenly;
+    border: white solid 2px;
+    color: white;
+    background: transparent;
+    width: 125px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.button-box a:hover {
+
+    color: black;
+    border: black 2px solid;
+    background: white;
+}
+
+a i {
+
+    font-size: 25px!important;
+    color: white;
+    transition: 0.6s;
+}
+
+.button-box a:hover > i {
+
+    font-size: 25px!important;
+    color: black;
+}
+
+.hidden {
+   
+    opacity: 0;
+    z-index: -999;
+    transition: 1.0s;
+    
+}
+
+.quest-1 {
+
+    position: absolute;
+    z-index: 999;
+}
+
+
+
+.quest-2, .quest-3, .quest-4, .quest-5, .quest-6, .quest-7, .quest-8, .quest-9, .quest-10 {
+
+    position: absolute;
+    right: 1000px;
+}
+
+.none-class {
+
+    position: absolute;
+    z-index: 999;
+    right: 560px;
+    transition: 1s;
+}
+
+.d-grid {
+
+    display: flex;
+    flex-direction: column;
+}
+
