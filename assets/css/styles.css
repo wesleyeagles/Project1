@@ -263,8 +263,9 @@ a i {
 
     .all-Content {
 
-        margin-left: 0px;
-        padding-top: 0px;
+        margin-left: 20px;
+        padding-top: 100px;
+        align-items: center;
     }
 
     .input-box input[type=text], .input-box input[type=date], .input-box input[type=file] {
@@ -280,6 +281,21 @@ a i {
       color: white;
       transition: 1.6s;
       
+    }
+
+    .input-box select {
+
+        width: 300px;
+        padding: 12px 10px;
+        margin: 0px 0;
+        font-size: 22px;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid white;
+        background: transparent;
+        color: white;
+        transition: 1.6s; 
+        
     }
     
     .input-box input[type=checkbox] {
@@ -305,9 +321,8 @@ a i {
     .box-form {
 
         background: rgba(0, 0, 0, 0.473);
-        width: 300px;
+        width: 350px;
         display: flex;
-        flex-direction: column;
         height: 800px;
     }
 
