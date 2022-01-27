@@ -250,7 +250,7 @@ a i {
 
         position: absolute;
         z-index: 999;
-        right: 10%;
+        right: 15%;
         transition: 1s;
     }
 
@@ -324,6 +324,11 @@ a i {
         width: 350px;
         display: flex;
         height: 800px;
+    }
+
+    .question-box h1 {
+
+        font-size: 18px;
     }
 
     
