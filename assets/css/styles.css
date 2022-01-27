@@ -167,6 +167,12 @@ a i {
     font-size: 25px!important;
     color: white;
     transition: 0.6s;
+    
+}
+
+label i {
+
+    padding-left: 10px;
 }
 
 .button-box a:hover > i {
