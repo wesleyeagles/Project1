@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" crossorigin>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -50,7 +50,8 @@
             </div>
 
             <div class="input-box">
-                <input placeholder="exemplo:celso@jde.com.br" id="questionNum2" type="email">
+                <input pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[@#$])[a-zA-Z0-9@#$]{8,50}$" placeholder="exemplo:celso@jde.com.br" id="questionNum2" type="email">
+                <h3 id="exampleMail"></h3>
                 <h3 id="warningEmail"></h3>
             </div>
 
@@ -67,7 +68,8 @@
             </div>
 
             <div class="input-box">
-                <input placeholder="exemplo:(51) 98765-9999" maxlength="11" id="questionNum3" type="tel">
+                <input placeholder="exemplo:(51) 98765-9999" maxlength="15" id="questionNum3" type="tel">
+                <h3 id="warningPhone"></h3>
             </div>
 
             <div class="button-box">
@@ -84,6 +86,7 @@
 
             <div class="input-box">
                 <input placeholder="exemplo:Rua Alameda da Inovação 273" id="questionNum4" type="text">
+                <h3 id="warningAdress"></h3>
             </div>
 
             <div class="button-box">

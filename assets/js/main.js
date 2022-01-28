@@ -22,6 +22,7 @@ window.onload = function(){
 }
 
 
+
 var question1 = document.getElementById("question1")
 var question2 = document.getElementById("question2")
 var question3 = document.getElementById("question3")
@@ -72,16 +73,22 @@ function changeOption2() {
 
     var inputEmail = document.getElementById("questionNum2").value
     var inputClass = document.getElementById("questionNum2")
+    var exampleMail = document.getElementById("exampleMail")
     var warningEmail = document.getElementById("warningEmail")
     warningEmail.style.padding = "10px"
     warningEmail.style.borderRadius = "5px"
     warningEmail.style.background = "crimson"
     warningEmail.style.color = "white"
+    exampleMail.style.padding = "10px"
+    exampleMail.style.borderRadius = "5px"
+    exampleMail.style.background = "crimson"
+    exampleMail.style.color = "white"
 
-    if (inputEmail == "") {
+    if (inputEmail.length <= 10) {
 
      inputClass.classList.add("warningClass")
-     warningEmail.innerHTML = "Digite um email valido"
+     exampleMail.innerHTML = "Exemplo: comercial@jde.com"
+     warningEmail.innerHTML = "Digite um email valido, veja acima no exemplo"
 
     } else {
 
@@ -96,17 +103,48 @@ function changeOption2() {
 
 function changeOption3() {
 
+    var inputPhone = document.getElementById("questionNum3").value
+    var inputClass = document.getElementById("questionNum3")
+    var warningPhone = document.getElementById("warningPhone")
+    warningPhone.style.padding = "10px"
+    warningPhone.style.borderRadius = "5px"
+    warningPhone.style.background = "crimson"
+    warningPhone.style.color = "white"
+
+    if (inputPhone.length != 15) {
+
+     inputClass.classList.add("warningClass")
+     warningPhone.innerHTML = "Digite um telefone valido"
+
+    } else {
+
     question1.classList.add("hidden")
     question2.classList.add("hidden")
     question3.classList.add("hidden")
 
     question4.classList.remove("hidden")
     question4.classList.add("none-class")
-
+}
 
 }
 
 function changeOption4() {
+
+    var inputAdress = document.getElementById("questionNum4").value
+    var inputClass = document.getElementById("questionNum4")
+    var warningAdress = document.getElementById("warningAdress")
+    warningAdress.style.padding = "10px"
+    warningAdress.style.borderRadius = "5px"
+    warningAdress.style.background = "crimson"
+    warningAdress.style.color = "white"
+
+    if (inputAdress.length < 8) {
+
+     inputClass.classList.add("warningClass")
+     warningAdress.innerHTML = "Digite um endereço valido"
+
+    } else {
+
 
     question1.classList.add("hidden")
     question2.classList.add("hidden")
@@ -116,6 +154,7 @@ function changeOption4() {
     question5.classList.remove("hidden")
     question5.classList.add("none-class")
 
+   }
 
 }
 
