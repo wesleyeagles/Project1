@@ -50,12 +50,13 @@ function changeOption() {
     var inputName = document.getElementById("questionNum1").value
     var inputClass = document.getElementById("questionNum1")
     var warningName = document.getElementById("warningName")
-    warningName.style.padding = "10px"
-    warningName.style.borderRadius = "5px"
-    warningName.style.background = "crimson"
-    warningName.style.color = "white"
+
 
     if (inputName == "") {
+     warningName.style.padding = "10px"
+     warningName.style.borderRadius = "5px"
+     warningName.style.background = "crimson"
+     warningName.style.color = "white"
      inputClass.classList.add("warningClass")
      warningName.innerHTML = "Digite um nome valido"
     } else {
@@ -75,17 +76,19 @@ function changeOption2() {
     var inputClass = document.getElementById("questionNum2")
     var exampleMail = document.getElementById("exampleMail")
     var warningEmail = document.getElementById("warningEmail")
-    warningEmail.style.padding = "10px"
-    warningEmail.style.borderRadius = "5px"
-    warningEmail.style.background = "crimson"
-    warningEmail.style.color = "white"
-    exampleMail.style.padding = "10px"
-    exampleMail.style.borderRadius = "5px"
-    exampleMail.style.background = "crimson"
-    exampleMail.style.color = "white"
+    
 
     if (inputEmail.length <= 10) {
 
+     
+     warningEmail.style.padding = "10px"
+     warningEmail.style.borderRadius = "5px"
+     warningEmail.style.background = "crimson"
+     warningEmail.style.color = "white"
+     exampleMail.style.padding = "10px"
+     exampleMail.style.borderRadius = "5px"
+     exampleMail.style.background = "crimson"
+     exampleMail.style.color = "white"
      inputClass.classList.add("warningClass")
      exampleMail.innerHTML = "Exemplo: comercial@jde.com"
      warningEmail.innerHTML = "Digite um email valido, veja acima no exemplo"
@@ -106,13 +109,14 @@ function changeOption3() {
     var inputPhone = document.getElementById("questionNum3").value
     var inputClass = document.getElementById("questionNum3")
     var warningPhone = document.getElementById("warningPhone")
-    warningPhone.style.padding = "10px"
-    warningPhone.style.borderRadius = "5px"
-    warningPhone.style.background = "crimson"
-    warningPhone.style.color = "white"
+    
 
     if (inputPhone.length != 15) {
 
+     warningPhone.style.padding = "10px"
+     warningPhone.style.borderRadius = "5px"
+     warningPhone.style.background = "crimson"
+     warningPhone.style.color = "white"
      inputClass.classList.add("warningClass")
      warningPhone.innerHTML = "Digite um telefone valido"
 
@@ -133,13 +137,14 @@ function changeOption4() {
     var inputAdress = document.getElementById("questionNum4").value
     var inputClass = document.getElementById("questionNum4")
     var warningAdress = document.getElementById("warningAdress")
-    warningAdress.style.padding = "10px"
-    warningAdress.style.borderRadius = "5px"
-    warningAdress.style.background = "crimson"
-    warningAdress.style.color = "white"
+    
 
     if (inputAdress.length < 8) {
 
+     warningAdress.style.padding = "10px"
+     warningAdress.style.borderRadius = "5px"
+     warningAdress.style.background = "crimson"
+     warningAdress.style.color = "white"   
      inputClass.classList.add("warningClass")
      warningAdress.innerHTML = "Digite um endereço valido"
 
