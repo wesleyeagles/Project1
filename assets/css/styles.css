@@ -121,7 +121,7 @@ select:focus {
 
     
     color: white;
-    background-color: rgb(0, 0, 0)!important;
+    background-color: rgb(68, 61, 61)!important;
     border: none!important;
     outline: none;
 }
@@ -168,8 +168,11 @@ select:focus {
 .button-box a:hover {
 
     color: black;
-    border: rgb(27, 194, 63) 2px solid;
+    border: rgb(27, 194, 124) 1px solid;
     background: white;
+    border-radius: 8px;
+    padding: 5px;
+
 }
 
 a i {
