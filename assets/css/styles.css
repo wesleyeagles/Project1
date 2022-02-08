@@ -22,7 +22,7 @@ body {
 
 .heading {
 
-    background-image: url(https://imagizer.imageshack.com/img922/9176/uNkmt3.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)),url(https://imagizer.imageshack.com/img923/3684/EW20Iq.jpg);
     height: 800px;
     display: grid;
     justify-content: center;
@@ -31,7 +31,7 @@ body {
 
 .box-form {
 
-    background: rgba(0, 0, 0, 0.473);
+    background: rgba(0, 0, 0, 0.673);
     width: 1000px;
     display: flex;
     flex-direction: column;
