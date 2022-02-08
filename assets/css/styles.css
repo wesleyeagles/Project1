@@ -261,15 +261,32 @@ label i {
     gap: 1px;
     font-weight: 500;
     font-size: 23px;
-    color: #A9CF46;
+    background: #111111;
     align-items: center;
     text-decoration: none;
+    padding: 50px;
 
+}
+
+span i {
+
+    background-color: white;
+    color: black;
+    font-size: 22px!important;
+    padding: 10px 12px;
+    border-radius: 100px;
+}
+
+.facebooki {
+
+    padding: 10px 15px;
 }
 
 .email-box a, .contato a, .adress-box a {
     text-decoration: none;
-    color: #A9CF46;
+    font-weight: normal;
+    font-size: 18px;
+    color: white;
 }
 
 .email-box, .contato {
@@ -281,23 +298,30 @@ label i {
 
     font-family: SocialCircles;
     font-size: 60px;
-    color: #A9CF46;
+    color: white;
     cursor: pointer;
     text-decoration: none;
+}
+
+.social-box {
+
+    margin-bottom: 20px!important;
 }
 
 footer {
 
     height: 120px;
-    background: #8F3131;
+    background: black;
 
 }
 
 .box-rodape {
 
     display: flex;
-    flex-direction: column;
+    gap: 40px;
     align-items: center;
+    height: 110px;
+    justify-content: center;
     color: white;
 }
 
@@ -311,7 +335,8 @@ footer {
 
     text-decoration: none;
     font-weight: bold;
-    color: white;
+    color: #A9CF46;
+    
 }
 
 
