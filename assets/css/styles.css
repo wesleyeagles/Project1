@@ -22,7 +22,9 @@ body {
 
 .heading {
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)),url(https://imagizer.imageshack.com/img923/3684/EW20Iq.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)),url(https://imagizer.imageshack.com/img922/8551/XTHRVy.jpg);
+    background-size: cover;
+    background-position: center;
     height: 800px;
     display: grid;
     justify-content: center;
