@@ -365,7 +365,7 @@ footer {
     }
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:428px) {
 
     body {
 
@@ -378,6 +378,25 @@ footer {
         z-index: 999;
         right: 11%;
         transition: 1s;
+    }
+
+    .contato a {
+
+        font-size: 16px;
+        text-align: center;
+        
+    }
+
+    .adress-box {
+
+        margin-top: 25px;
+    }
+
+    .adress-box a {
+
+        font-size: 16px;
+        text-align: center;
+        margin-top: 15px;
     }
 
     .final-box {
@@ -467,7 +486,6 @@ footer {
     .box-all-white {
 
         display: flex;
-        flex-direction: column;
         gap: 1px;
         font-weight: 500;
         font-size: 16px;
@@ -475,6 +493,13 @@ footer {
         align-items: center;
         text-decoration: none;
     
+    }
+
+    .box-rodape {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
     .heading {
